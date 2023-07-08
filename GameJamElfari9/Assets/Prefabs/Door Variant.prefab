@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9b7a44f914ed44946b2d52cb79be5b03, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.52170366
+      value: 0.99
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9b7a44f914ed44946b2d52cb79be5b03, type: 3}
       propertyPath: m_LocalPosition.x
@@ -139,3 +139,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ledArray:
   - {fileID: 0}
+  equation: 

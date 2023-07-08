@@ -26,10 +26,16 @@ public class ledTogglingLogic : MonoBehaviour
         if (on)
         {
             rndr.material.color = onColor;
+            rndr.material.SetColor("_EmissionColor", onColor);
+            rndr.material.EnableKeyword("_EMISSION");
+            rndr.material.globalIlluminationFlags = MaterialGlobalIlluminationFlags.RealtimeEmissive;
         }
         else
         {
             rndr.material.color = offColor;
+            rndr.material.SetColor("_EmissionColor", offColor);
+            rndr.material.EnableKeyword("_EMISSION");
+            rndr.material.globalIlluminationFlags = MaterialGlobalIlluminationFlags.RealtimeEmissive;
         }
     }
 
