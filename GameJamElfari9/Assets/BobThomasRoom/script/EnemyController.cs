@@ -30,13 +30,6 @@ public class EnemyController : MonoBehaviour
         // Move towards the player
          // Move in the current direction
     transform.Translate(currentDirection * movementSpeed * Time.deltaTime);
-// Check for obstacles
-    RaycastHit hit;
-    if (Physics.Raycast(transform.position, currentDirection, out hit, raycastDistance))
-    {
-        // If an obstacle is detected, change the movement direction
-        currentDirection = Vector3.Reflect(currentDirection, hit.normal);
-    }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -46,6 +39,14 @@ public class EnemyController : MonoBehaviour
             TakeDamage(1);
             Destroy(other.gameObject);
              Debug.Log("touch it ");
+        }
+        if(other.CompareTag("Wall")){
+            // Check for obstacles
+            RaycastHit hit;
+            if (Physics.Raycast(transform.position, currentDirection, out hit, raycastDistance))
+            {                    // If an obstacle is detected, change the movement direction
+                currentDirection = Vector3.Reflect(currentDirection, hit.normal);
+            }
         }
     }
 
