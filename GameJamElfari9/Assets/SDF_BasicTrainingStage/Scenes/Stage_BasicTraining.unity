@@ -1923,6 +1923,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f3005fe0cb9e2344db6375b2f7ed14e5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1569239252}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f3005fe0cb9e2344db6375b2f7ed14e5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1569239253}
   m_SourcePrefab: {fileID: 100100000, guid: f3005fe0cb9e2344db6375b2f7ed14e5, type: 3}
 --- !u!4 &1569239249 stripped
 Transform:
@@ -1946,12 +1949,6 @@ MonoBehaviour:
   sprintSpeed: 8
   jumpHeight: 3
   gravity: -7
-  bulletPrefab: {fileID: 542731052}
-  bulletSpawnPoint: {fileID: 658526158}
-  shootFrequency: 3
-  freezeTime: 0
-  shootSpeed: 60
-  shootDistance: 10
   rotationSpeed: 500
 --- !u!143 &1569239251
 CharacterController:
@@ -2000,6 +1997,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1569239253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759981308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d55744ec2edaaab43a0e0ee3f8a360f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 542731052}
+  bulletSpawnPoint: {fileID: 658526158}
+  shootFrequency: 1
+  freezeTime: 0
+  shootSpeed: 100
+  shootDistance: 100
 --- !u!1001 &1609214582
 PrefabInstance:
   m_ObjectHideFlags: 0
