@@ -9,7 +9,7 @@ public class ledTogglingLogic : MonoBehaviour
     public bool on = false;
     [SerializeField] private Color onColor = Color.green;
     [SerializeField] private Color offColor = Color.red;
-    [SerializeField] private float detectionDistance = 2f;
+    [SerializeField] private float detectionDistance = 3f;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +17,7 @@ public class ledTogglingLogic : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (Vector3.Distance(transform.position,target.transform.position) < detectionDistance && Input.GetKeyDown(KeyCode.T))
         {
