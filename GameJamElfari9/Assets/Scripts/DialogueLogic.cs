@@ -6,7 +6,7 @@ public class DialogueLogic : MonoBehaviour
 {
     [SerializeField] private string[]  lines;
     [SerializeField] private TextMeshProUGUI text;
-    [SerializeField] private float textSpeed;
+    [SerializeField] private float textSpeed = 0.01f;
     private int index;
     // Start is called before the first frame update
     void Start()
@@ -43,7 +43,7 @@ public class DialogueLogic : MonoBehaviour
         foreach(char c in lines[index].ToCharArray())
         {
             text.text += c;
-            yield return new WaitForSeconds(textSpeed);
+            yield return new WaitForSeconds(textSpeed/Time.deltaTime);
         }
     }
 
