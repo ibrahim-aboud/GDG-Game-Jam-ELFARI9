@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Bullet
   - Wall
+  - Floor
+  - Bug
   layers:
   - Default
   - TransparentFX

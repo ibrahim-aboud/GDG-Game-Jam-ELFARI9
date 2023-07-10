@@ -80,6 +80,7 @@ public class MazeSpawner : MonoBehaviour {
 		if(GoalPrefab != null){
 				GameObject tmp = Instantiate(GoalPrefab,new Vector3(20,1,29), Quaternion.Euler(0,0,0)) as GameObject;
 			 	tmp.transform.parent = transform;
+				 tmp.tag = "Bug";
 			}
 		if(Pillar != null){
 			for (int row = 0; row < Rows+1; row++) {
