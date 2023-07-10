@@ -228,6 +228,10 @@ PrefabInstance:
       propertyPath: moveSoundClip
       value: 
       objectReference: {fileID: 8300000, guid: c821b45502688eb4a99c7e1f30328b5c, type: 3}
+    - target: {fileID: 1592609228250989359, guid: 1fcbdbb81cb7ce24091608cb2274ea46, type: 3}
+      propertyPath: rotationSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1732562861088811688, guid: 1fcbdbb81cb7ce24091608cb2274ea46, type: 3}
       propertyPath: m_Name
       value: Pete_SeperatedLimbs_Test_1 Variant

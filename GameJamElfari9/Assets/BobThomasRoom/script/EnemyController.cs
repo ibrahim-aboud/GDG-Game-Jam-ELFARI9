@@ -5,12 +5,12 @@ using UnityEngine.SceneManagement;
 public class EnemyController : MonoBehaviour
 {
     public float movementSpeed = 3f;
-    public int maxHealth = 7;
+    public int maxHealth = 5;
     public GameObject bulletPrefab;
     public static int numberOfClones=1;
     private int currentHealth;
     private Transform player;
-    private float spawnDelay = 3f;
+    private float spawnDelay = 2f;
     private Vector3 currentDirection;
     public float raycastDistance = 2f;
     public Slider healthbar;
@@ -32,7 +32,7 @@ public class EnemyController : MonoBehaviour
         // Move towards the player
          // Move in the current direction
     transform.Translate(currentDirection * movementSpeed * Time.deltaTime);
-    if(numberOfClones==30){
+    if(numberOfClones==10){
         MaxAttend=true;
     }
     
@@ -78,6 +78,7 @@ public class EnemyController : MonoBehaviour
 
     private void SpawnEnemy()
     {
+        Debug.Log(numberOfClones);
         if(!MaxAttend){
             if (numberOfClones < 4)
             {
@@ -96,6 +97,6 @@ public class EnemyController : MonoBehaviour
     private void ResetSpawnDelay()
     {
         CancelInvoke("SpawnEnemy");
-        InvokeRepeating("SpawnEnemy", spawnDelay, spawnDelay);
+        InvokeRepeating("SpawnEnemy", spawnDelay*2, spawnDelay*2);
     }
 }
