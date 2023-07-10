@@ -17,7 +17,7 @@ public class finishingLogic : MonoBehaviour
     {
         if(Vector3.Distance(targetObject.transform.position,transform.position )< Vector3.Distance(targetObject.transform.position, mesuringObject.transform.position) && Input.GetKeyDown(KeyCode.Space))
         {
-            SceneManager.LoadScene("BobRoomBeforeBattle");
+            SceneManager.LoadScene("StartClassScene");
         }
     }
 }
