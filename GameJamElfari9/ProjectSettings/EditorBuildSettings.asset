@@ -24,11 +24,15 @@ EditorBuildSettings:
     path: Assets/VirusCombat/Scenes/VirusCambatScene.unity
     guid: afe124a1136d6bb4fb53732b0a2cd1bf
   - enabled: 1
+    path: Assets/BobThomasRoom/Server Room/Scene/BobRoomBeforeBattle.unity
+    guid: 6f97b5dde7e972c47b978dfb35cfe853
+  - enabled: 1
+    path: Assets/GraceHoperLevel/GraceHoperRoom.unity
+    guid: baba0e100a2ef4146b124d406ccfba91
+  - enabled: 1
     path: Assets/BobThomasRoom/Server Room/Scene/BobRoomAfterBattle.unity
     guid: 4c5ec6833cc73d647b1ec15fc64e27a5
   - enabled: 1
     path: Assets/BobThomasRoom/Server Room/Scene/BobRoomScene.unity
     guid: fc7981980dd90ee40b53eda4bd70c5fb
-  
-
   m_configObjects: {}
