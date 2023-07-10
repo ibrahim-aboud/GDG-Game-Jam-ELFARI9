@@ -21,6 +21,8 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
 
     public float rotationSpeed = 3f;
+    public AudioClip moveSoundClip; // Sound clip for player movement
+    private AudioSource audioSource;
 
     void Start()
     {
@@ -28,6 +30,13 @@ public class PlayerMovement : MonoBehaviour
         controller = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
         animator.SetInteger("state", 0);
+         // Create an AudioSource component if not already attached
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+        audioSource.loop = true;
+        audioSource.clip = moveSoundClip;
     }
 
     void Update()
@@ -72,10 +81,20 @@ public class PlayerMovement : MonoBehaviour
             }
 
             controller.Move(moveDirection.normalized * trueSpeed * Time.deltaTime);
+             // Play move sound if not already playing
+            if (!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
         }
         else
         {
             animator.SetInteger("state", 0); // Set the state to idle
+            // Stop move sound if currently playing
+            if (audioSource.isPlaying)
+            {
+                audioSource.Stop();
+            }
         }
 
         if (Input.GetButtonDown("Jump") && isGrounded)

@@ -179,6 +179,10 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 1346720326}
+    - target: {fileID: 1592609228250989359, guid: 1fcbdbb81cb7ce24091608cb2274ea46, type: 3}
+      propertyPath: moveSoundClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c821b45502688eb4a99c7e1f30328b5c, type: 3}
     - target: {fileID: 1732562861088811688, guid: 1fcbdbb81cb7ce24091608cb2274ea46, type: 3}
       propertyPath: m_Name
       value: Pete_SeperatedLimbs_Test_1 Variant
@@ -442,6 +446,13 @@ MonoBehaviour:
     GateFit: 2
     FocusDistance: 10
     m_SensorSize: {x: 1, y: 1}
+    Iso: 200
+    ShutterSpeed: 0.005
+    Aperture: 16
+    BladeCount: 5
+    Curvature: {x: 2, y: 11}
+    BarrelClipping: 0.25
+    Anamorphism: 0
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0

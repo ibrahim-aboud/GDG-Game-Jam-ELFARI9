@@ -11,6 +11,17 @@ public class PlayerShooting : MonoBehaviour
     public float freezeTime;
     public float shootSpeed;
     public float shootDistance = 10f;
+    public AudioClip shootSoundClip; // Sound clip for player shooting
+    private AudioSource audioSource;
+
+void Start()
+    {
+        // Create an AudioSource component if not already attached
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+    }
 
     void Update()
     {
@@ -19,6 +30,11 @@ public class PlayerShooting : MonoBehaviour
         {
             Debug.Log("The shot");
             Shoot();
+            // Play shoot sound
+            if (shootSoundClip != null)
+            {
+                audioSource.PlayOneShot(shootSoundClip);
+            }
         }
     }
 

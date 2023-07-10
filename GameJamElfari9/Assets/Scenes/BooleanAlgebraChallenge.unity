@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -289,6 +289,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1103250281819143337, guid: aa9d1ade0d2849e4c9d43552ae8ae295, type: 3}
   m_PrefabInstance: {fileID: 2130074089}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &12921786
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 12921788}
+  - component: {fileID: 12921787}
+  m_Layer: 0
+  m_Name: SoundPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &12921787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12921786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb8a9d87937bad345a4654d698685eec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicClip: {fileID: 8300000, guid: 36202db7285c18c45a28935b4b7e4cfc, type: 3}
+--- !u!4 &12921788
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12921786}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 330.97217, y: 138.66681, z: -47.196007}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 32
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &12964853
 GameObject:
   m_ObjectHideFlags: 0
@@ -30685,6 +30730,10 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 2013930606}
+    - target: {fileID: 1592609228250989359, guid: 1fcbdbb81cb7ce24091608cb2274ea46, type: 3}
+      propertyPath: moveSoundClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c821b45502688eb4a99c7e1f30328b5c, type: 3}
     - target: {fileID: 1732562861088811688, guid: 1fcbdbb81cb7ce24091608cb2274ea46, type: 3}
       propertyPath: m_Name
       value: Pete_SeperatedLimbs_Test_1 Variant
