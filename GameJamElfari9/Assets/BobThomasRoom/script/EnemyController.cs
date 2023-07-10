@@ -14,6 +14,7 @@ public class EnemyController : MonoBehaviour
     private Vector3 currentDirection;
     public float raycastDistance = 2f;
     public Slider healthbar;
+    private bool MaxAttend=false;
 
     private void Start()
     {
@@ -31,6 +32,9 @@ public class EnemyController : MonoBehaviour
         // Move towards the player
          // Move in the current direction
     transform.Translate(currentDirection * movementSpeed * Time.deltaTime);
+    if(numberOfClones==30){
+        MaxAttend=true;
+    }
     
     }
 
@@ -43,12 +47,10 @@ public class EnemyController : MonoBehaviour
              Debug.Log("touch it ");
         }
         if(other.CompareTag("Wall")){
+            Debug.Log("collided with wall");
             // Check for obstacles
-            RaycastHit hit;
-            if (Physics.Raycast(transform.position, currentDirection, out hit, raycastDistance))
-            {                    // If an obstacle is detected, change the movement direction
-                currentDirection = Vector3.Reflect(currentDirection, hit.normal);
-            }
+            Vector3 invertedVector = currentDirection * -1;
+            currentDirection = invertedVector;
         }
     }
 
@@ -76,7 +78,7 @@ public class EnemyController : MonoBehaviour
 
     private void SpawnEnemy()
     {
-        if(numberOfClones<30){
+        if(!MaxAttend){
             if (numberOfClones < 4)
             {
                 numberOfClones++;
