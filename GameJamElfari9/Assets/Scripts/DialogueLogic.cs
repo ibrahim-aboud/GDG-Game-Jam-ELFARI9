@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
+using UnityEngine.SceneManagement;
+
 public class DialogueLogic : MonoBehaviour
 {
     [SerializeField] private string[]  lines;
@@ -57,7 +60,23 @@ public class DialogueLogic : MonoBehaviour
         }
         else
         {
-            gameObject.SetActive(false);
+            if (SceneManager.GetActiveScene().name == "BooleanAlgebraLevel")
+            {
+                SceneManager.LoadScene("BooleanAlgebraChallenge");
+            }
+            else
+            {
+                gameObject.SetActive(false);
+            }
+            
         }
     }
 }
+
+
+
+
+
+
+
+        
