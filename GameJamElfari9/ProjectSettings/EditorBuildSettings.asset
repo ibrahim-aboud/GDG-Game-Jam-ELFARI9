@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/GameMenu.unity
+    guid: f8c7ad868a5867349b25e0add21a3b11
+  - enabled: 1
+    path: Assets/StartClassroom/Scene/StartClassScene.unity
+    guid: 9e5b5c01a6f2d9047ae1fb28234172df
+  - enabled: 1
     path: Assets/Scenes/BooleanAlgebraLevel.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
@@ -20,4 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/BobThomasRoom/Server Room/Scene/BobRoomAfterBattle.unity
     guid: 4c5ec6833cc73d647b1ec15fc64e27a5
+  - enabled: 1
+    path: Assets/BobThomasRoom/Server Room/Scene/BobRoomScene.unity
+    guid: fc7981980dd90ee40b53eda4bd70c5fb
+  
+
   m_configObjects: {}
