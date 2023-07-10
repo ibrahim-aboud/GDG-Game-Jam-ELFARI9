@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BooleanAlgebraChallenge.unity
     guid: fb83b2bb96b271042b75b564ece2ffd6
+  - enabled: 1
+    path: Assets/GraceHoperLevel/MazeGenerator/MazeLevel.unity
+    guid: 5f66713930f36f84a865122d99889d76
+  - enabled: 1
+    path: Assets/VirusCombat/Scenes/VirusCambatScene.unity
+    guid: afe124a1136d6bb4fb53732b0a2cd1bf
+  - enabled: 1
+    path: Assets/BobThomasRoom/Server Room/Scene/BobRoomAfterBattle.unity
+    guid: 4c5ec6833cc73d647b1ec15fc64e27a5
   m_configObjects: {}

@@ -1,12 +1,13 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class EnemyController : MonoBehaviour
 {
     public float movementSpeed = 3f;
     public int maxHealth = 7;
     public GameObject bulletPrefab;
-    public static int numberOfClones=0;
+    public static int numberOfClones=1;
     private int currentHealth;
     private Transform player;
     private float spawnDelay = 3f;
@@ -30,6 +31,7 @@ public class EnemyController : MonoBehaviour
         // Move towards the player
          // Move in the current direction
     transform.Translate(currentDirection * movementSpeed * Time.deltaTime);
+    
     }
 
     private void OnTriggerEnter(Collider other)
@@ -64,6 +66,11 @@ public class EnemyController : MonoBehaviour
     {
         // Add death effects if needed
         numberOfClones -=1;
+        Debug.Log(numberOfClones);
+        if(numberOfClones==0){
+        Debug.Log("change the scene");
+         SceneManager.LoadScene("BobRoomAfterBattle");
+    }
         Destroy(gameObject);
     }
 
