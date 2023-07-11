@@ -1,10 +1,23 @@
 # ByteQuest
 ![alt text](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/532/967/datas/original.png)
 
-
 **Note: This game build is currently in development and not yet complete.**
 
-To test the game, follow the steps below:
+## Play Online
+
+The game is available to play online. You can access the web version of the game at the following link:
+
+[Play Game Online](https://byte-quest-gilt.vercel.app/)
+
+## Download Desktop Version
+
+If you prefer to play the game as a desktop application, you can download the desktop version from the following link:
+
+[Download Game](https://drive.google.com/drive/folders/1GPIiwHk0DH4IXfVSEoH_a1WOCQ3Q90tt?usp=sharing)
+
+
+## Downlaod the unity project
+if you want to merge the repos, follow the steps below:
 
 ## Prerequisites
 
