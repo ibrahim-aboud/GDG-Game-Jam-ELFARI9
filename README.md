@@ -80,4 +80,4 @@ The game includes several challenging levels:
 
 Enjoy playing the game and thank you for your support!
 
-[Optional: Add any other relevant information or acknowledgments you would like to include.]
+
